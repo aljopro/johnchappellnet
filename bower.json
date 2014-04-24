@@ -1,11 +1,10 @@
 {
-  "name": "beautycall",
+  "name": "johnchappellnet",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
+    "bootstrap-sass-official": "~3.1.1",
     "modernizr": "~2.6.2",
-    "jquery": "~1.11.0",
-    "font-awesome": "~4.0.3"
+    "jquery": "~1.11.0"
   },
   "devDependencies": {}
 }
