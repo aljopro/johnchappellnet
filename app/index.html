@@ -1,92 +1,226 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>John Chappell: Web Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <title>John Chappell: Web Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-        <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/modernizr/feature-detects/css-vhunit.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">John Chappell</a>
-                </div>
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#resume">My Résumé</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
+<div class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">John Chappell</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">My Résumé</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1>John Chappell</h1>
+
+        <p>Web developer and JavaScript enthusiast.</p>
+    </div>
+</div>
+<div id="portfolio" class="section">
+    <div class="container">
+        <header>
+            <h2>Portfolio</h2>
+            <span>Some of the projects I've been a part of.</span>
+        </header>
+        <div class="row text-center">
+            <div class="col-sm-4 ">
+                <a href="http://education.ti.com" title="TI Education Technology">
+                    <h3>TI Education Technology</h3>
+                    <img src="/images/Portfolio/edtech.jpg" alt="TI Education Technology"/>
+
+                    <p>The Education Technology website was migrated by me and three other developers from a table
+                        driven layout rendered in quirks mode using the TeamSite CMS to a fully HTML 5 tableless layout
+                        using the Sitecore CMS.</p>
+                </a>
+            </div>
+            <div class="col-sm-4 ">
+                <a href="http://pms.johnchappell.net" title="CheckIT Task Management System">
+                    <h3>CheckIT Task Management System</h3>
+                    <img src="/images/Portfolio/checkit.jpg" alt="CheckIT Task Management System"/>
+
+                    <p>This web application was my capstone project for my Bachelor's in Arts and Technology at the
+                        University of Texas at Dallas. All development and design was done by me. I plan to further
+                        expand it and make it a full featured application.</p>
+                </a>
+            </div>
+            <div class="col-sm-4 ">
+                <a href="http://mathforward.com" title="Math Forward">
+                    <h3>Math Forward</h3>
+                    <img src="/images/Portfolio/mathforward.jpg" alt="Math Forward"/>
+
+                    <p>I had the honor of working on TI's first HTML5 project. The site is a clean static design with no
+                        server code behind, just pure HTML, CSS, and Javascript skill. It was very important that this
+                        project gracefully degrade in lesser browsers as the intended audience may have older
+                        browsers.</p>
+                </a>
             </div>
         </div>
-        <div class="jumbotron">
-            <div class="container">
-                <h1>John Chappell</h1>
-                <p>Web developer and JavaScript enthusiast.</p>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <a href="http://tisciencenspired.com" title="Texas Instruments Science Nspired">
+                    <h3>TI Science Nspired</h3>
+                    <img src="/images/Portfolio/tiscnspired.jpg" alt="Texas Instruments Science Nspired"/>
+
+                    <p>A microsite that I developed in .NET with John McKay as lead designer. </p>
+                </a>
+            </div>
+            <div class="col-sm-4 ">
+                <a href="http://v2.johnchappell.net" title="John Chappell Portfolio Version 2">
+                    <h3>John Chappell Portfolio Version 2</h3>
+                    <img src="/images/Portfolio/jchapv2.jpg" alt="John Chappell Portfolio Version 2"/>
+
+                    <p>The second edition of John Chappell. This version uses simple .Net Web Forms.</p>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="http://v1.johnchappell.net" title="John Chappell Portfolio Version 1">
+                    <h3>John Chappell Portfolio Version 1</h3>
+                    <img src="/images/Portfolio/jchappellold.jpg" alt="John Chappell Portfolio Version 1"/>
+
+                    <p>The first edition of the John Chappell Portfolio Website.</p>
+                </a>
             </div>
         </div>
+    </div>
+</div>
+<div id="about" class="section">
+    <div class="container">
+        <header>
+            <h2>About Me</h2>
+            <strong>Get to know me.</strong>
+        </header>
+
+        <p>I am 27 years old, currently living in Richardson, TX. I have a amazing wife who works really hard making
+            iPhone Applications, cooking wonderful meals, and puts up with my long hours at work. I enjoy Web
+            development/design blogs, designing board games, and spending time with my wife and cats.</p>
+
+        <p>I have always had a thing for video games and how they were made. I grew up on Super Mario Brothers and
+            Zelda. I used to have notebooks of designed levels for the games I played. Later in my teenage years, I
+            stumbled across a TRS-80 CoCo II for twelve dollars where I learned my first programming language, BASIC.
+            Now I had the ability to create these beautiful games... kinda. It was mostly text-based and 4-bit graphics.
+            At most, I could make the equivalent of Adventure for the Atari 2600.</p>
+
+        <p>I later took courses on computer programming and started a degree in Computer Science. I found that the
+            Computer Science degree wasn't exactly what I was looking though useful. I began understanding that the User
+            Interface was the most enjoyable part of a project. I changed my major to an ATEC (Arts & Technology) major,
+            focusing on User Interface Design. I enjoyed how ATEC was a more hands on experience where Computer Science
+            tended to be more theory based. I now use that knowledge from both degree plans to design and develop web
+            presences.</p>
+
+        <p>In tandem with CS/ATEC degree I also have had plenty experience in the field, designing UIs for a variety of
+            platforms for several companies. I have had experience building Web Applications in JSP and .Net. I
+            developed on a labor tracking system for Java ME capable devices. I enjoyed developing the UI for each of
+            these platforms. When there is a need, my experience also spans background operations such as web services,
+            some database access, strategy, and on occasion project management. The vast majority of my experience is
+            for Web User Interfaces and Front End Development.</p></div>
+</div>
+<div id="resume" class="section">
+    <div class="container">
+        <header>
+            <h2>My Résumé</h2>
+            <strong>The official document that tells you I'm what you need.</strong>
+        </header>
+        <h3>Pick your favorite format:</h3>
+        <ul>
+            <li>
+                <a href="https://docs.google.com/document/d/1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA/edit">Online</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA/export?format=docx&id=1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA">Word</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA/export?format=pdf&id=1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA">PDF</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA/export?format=txt&id=1FfKUcMEzCIPcgVzpK-YBZUtk0hpbpsa5CQ8W1DjVwjA">Plain
+                    Text</a></li>
+        </ul>
+    </div>
+</div>
 
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
+<!-- build:js scripts/plugins.js -->
+<script src="scripts/plugins/vh-shim.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>

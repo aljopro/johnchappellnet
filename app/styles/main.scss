@@ -5,11 +5,82 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 // endbower
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
-.navbar-static-top.navbar {
+
+a {
+  color: #333;
+  &:hover, &:focus {
+    color: #555;
+  }
+}
+
+.navbar-transparent, .navbar-opaque {
+  background-color: rgba(238, 238, 238, .5);
   margin-bottom: 0px;
+  .nav {
+
+    margin-top: 0;
+
+    li {
+      a {
+        &:hover, &:focus {
+          background-color: rgba(238, 238, 238, .25)
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      background: transparent;
+    }
+  }
+
+  .navbar-toggle {
+
+    &:hover,
+    &:focus {
+      background-color: rgba(238, 238, 238, .5)
+    }
+    .icon-bar {
+      background-color: #333;
+    }
+  }
+}
+
+.section[id]:before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin: -30px 0 0;
+}
+
+.navbar-opaque {
+  background: #f6f6f6;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.jumbotron {
+  background: url('../images/backgrounds/old_road.jpg') top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#portfolio {
+  img {
+    max-height: 150px;
+    
+  }
+  a {
+    text-decoration: none;
+  }
 }
