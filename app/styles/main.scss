@@ -17,9 +17,18 @@ a {
     color: #555;
   }
 }
-
+.brand-hidden{
+  opacity: 0;
+}
+.navbar-brand {
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.25s ease-out;
+}
 .navbar-transparent, .navbar-opaque {
   background-color: rgba(238, 238, 238, .5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(238, 238, 238, 0.5);
+  -moz-box-shadow:    0px 2px 1px 0px rgba(238, 238, 238, 0.5);
+  box-shadow:         0px 2px 1px 0px rgba(238, 238, 238, 0.5);
   margin-bottom: 0px;
   .nav {
 
@@ -59,6 +68,7 @@ a {
 
 .navbar-opaque {
   background: #f6f6f6;
+
 }
 
 html {
@@ -67,18 +77,36 @@ html {
 
 body {
   min-height: 100%;
+  background: #f6f6f6;
 }
 
 .jumbotron {
-  background: url('../images/backgrounds/old_road.jpg') top center;
-  background-size: cover;
+  // /* Old browsers */
+  background: #f6f6f6 url('../images/hero.png') no-repeat bottom center;
+  background: url('../images/hero.png') no-repeat bottom center, -moz-linear-gradient(top,  #f6f6f6 0%, #006e2e 100%); /* FF3.6+ */
+  background: url('../images/hero.png') no-repeat bottom center,  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#006e2e)); /* Chrome,Safari4+ */
+  background: url('../images/hero.png') no-repeat bottom center, -webkit-linear-gradient(top,  #f6f6f6 0%,#006e2e 100%); /* Chrome10+,Safari5.1+ */
+  background: url('../images/hero.png') no-repeat bottom center, -o-linear-gradient(top,  #f6f6f6 0%,#006e2e 100%); /* Opera 11.10+ */
+  background: url('../images/hero.png') no-repeat bottom center, -ms-linear-gradient(top,  #f6f6f6 0%,#006e2e 100%); /* IE10+ */
+  background: url('../images/hero.png') no-repeat bottom center, linear-gradient(to bottom,  #f6f6f6 0%,#006e2e 100%); /* W3C */
+  background-size: 720px, cover;
+  //background: url('../images/backgrounds/old_road.jpg') top center;
+  padding-top: 48px;
   height: 100vh;
+
+  @media (min-width: 480px) {
+    background-size: contain;
+  }
+
+}
+.hero {
+  //background: url('../images/hero.png') no-repeat bottom center;
+  //background-size: contain;
 }
 
 #portfolio {
   img {
     max-height: 150px;
-    
   }
   a {
     text-decoration: none;

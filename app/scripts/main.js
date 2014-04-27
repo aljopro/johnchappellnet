@@ -3,10 +3,19 @@
 		var isiOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
 		var $window = $(window);
 		var navbar = $('.navbar-transparent');
+		var brand = $('.navbar-brand');
 		var jumbotron = $('.jumbotron');
+		var jumbotronContainer = jumbotron.find('.container');
 
 		$window.on('scroll', function(event){
-			if($window.scrollTop() > $window.height()){
+			if($window.scrollTop() >= jumbotronContainer.height()){
+				brand.removeClass('brand-hidden');
+			}
+			else {
+				brand.addClass('brand-hidden');
+			}
+
+			if($window.scrollTop() >= $window.height()){
 				navbar
 					.addClass('navbar-opaque')
 					.removeClass('navbar-transparent');
