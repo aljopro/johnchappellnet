@@ -1,7 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
+$fa-font-path: "../bower_components/font-awesome/fonts/";
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browsehappy {
@@ -11,7 +12,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
   padding: 0.2em 0;
 }
 
-a {
+header {
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+  margin-bottom: 1em;
+}
+
+a, a.btn-link {
   color: #333;
   &:hover, &:focus {
     color: #555;
@@ -99,16 +107,21 @@ body {
   }
 
 }
-.hero {
-  //background: url('../images/hero.png') no-repeat bottom center;
-  //background-size: contain;
-}
 
 #portfolio {
   img {
     max-height: 150px;
+    margin: 10px 0;
   }
   a {
     text-decoration: none;
   }
+}
+
+#footer {
+  font-size: 80%;
+  background: #006e2e;
+  color: #f6f6f6;
+  padding-top: 1em;
+  margin-top: 50px;
 }
