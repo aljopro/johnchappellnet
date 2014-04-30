@@ -17,13 +17,20 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('app/scripts/**/*.js')
+    return gulp.src(['app/scripts/**/*.js', '!app/scripts/plugins/**/*.js'])
+
         .pipe($.jshint())
         .pipe($.jshint.reporter($.jshintStylish))
         .pipe($.size());
 });
 
-gulp.task('html', ['styles', 'scripts'], function () {
+gulp.task('components', function() {
+	return gulp.src('app/bower_components/**/*.{css,eot,svg,ttf,woff}', { base: 'app/' })
+		.pipe(gulp.dest('dist'))
+		.pipe($.size());
+});
+
+gulp.task('html', ['styles', 'scripts', 'components'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
@@ -53,8 +60,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return $.bowerFiles()
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+    return gulp.src('app/**/*.{eot,svg,ttf,woff}')
         .pipe($.flatten())
         .pipe(gulp.dest('dist/fonts'))
         .pipe($.size());

@@ -1,6 +1,6 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$fa-font-path: "../bower_components/font-awesome/fonts/";
 
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap";
+$fa-font-path: "../bower_components/font-awesome/fonts";
 $font-family-sans-serif: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -8,7 +8,38 @@ $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
 
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+
+// Core variables and mixins
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/normalize";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/print";
+
+// Core CSS
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/type";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/code";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/grid";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/tables";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/forms";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/dropdowns";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/button-groups";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navs";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navbar";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/jumbotron";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/thumbnails";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/responsive-embed";
+
+// Utility classes
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/responsive-utilities";
+
 @import "../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 

@@ -1,3 +1,4 @@
+'use strict';
 (function($){
 	$(function(){
 		var isiOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
@@ -7,7 +8,7 @@
 		var jumbotron = $('.jumbotron');
 		var jumbotronContainer = jumbotron.find('.container');
 
-		$window.on('scroll', function(event){
+		$window.on('scroll', function(){
 			if($window.scrollTop() >= jumbotronContainer.height()){
 				brand.removeClass('brand-hidden');
 			}
@@ -27,7 +28,7 @@
 		});
 
 		navbar.find('.navbar-nav a').on('click', function(){
-			$(".navbar-toggle:visible").click();
+			$('.navbar-toggle:visible').click();
 		});
 
 
@@ -36,9 +37,9 @@
 
 		if(isiOS){
 			jumbotron.css({
-				"height": "100vh"
+				'height': '100vh'
 			});
-			$(".navbar-toggle").click(function(){
+			$('.navbar-toggle').click(function(){
 				//been debugging this for hours. The collapse code from bootstrap doesn't fire on iOS unless I add a click function.
 			});
 		} else {
