@@ -287,7 +287,7 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            '*.{ico,png,txt}',
+            '*.{ico,png,txt,xml}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
             'angularStyleSelectDirective/{,*/}*.*',
@@ -300,6 +300,12 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/font-awesome/',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
         }]
