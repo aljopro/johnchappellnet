@@ -68,8 +68,7 @@ a.btn-link:focus
 
 .navbar-brand
 {
-    -webkit-transition: opacity .5s ease-out;
-            transition: opacity .25s ease-out;
+    transition: opacity .25s ease-out;
 }
 
 .navbar a {
@@ -142,18 +141,9 @@ a.btn-link:focus
     height: 100vh; 
     padding-top: 48px;
     background: #f6f6f6 url('../images/hero.png') no-repeat bottom center;
-    background: url('../images/hero.png') no-repeat bottom center, -moz-linear-gradient(top, #f6f6f6 0%, #e1e1e1 100%);
-    /* FF3.6+ */
-    background: url('../images/hero.png') no-repeat bottom center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #006e2e));
-    /* Chrome,Safari4+ */
-    background: url('../images/hero.png') no-repeat bottom center, -webkit-linear-gradient(top, #f6f6f6 0%, #e1e1e1 100%);
-    /* Chrome10+,Safari5.1+ */
     background: url('../images/hero.png') no-repeat bottom center, -o-linear-gradient(top, #f6f6f6 0%, #e1e1e1 100%);
-    /* Opera 11.10+ */
     background: url('../images/hero.png') no-repeat bottom center, -ms-linear-gradient(top, #f6f6f6 0%, #e1e1e1 100%);
-    /* IE10+ */
     background: url('../images/hero.png') no-repeat bottom center, linear-gradient(to bottom, #f6f6f6 0%, #e1e1e1 100%);
-    /* W3C */
     background-size: 720px, cover;
 }
 
